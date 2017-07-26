@@ -2207,14 +2207,14 @@
     <resource xml:lang="fi">
         <common>
             <formats>
-                <within-day>[h]:[m01] [P,*-2]</within-day>
-                <day-this-year>[D] [MNn]</day-this-year>
-                <short-date>[D01]/[M01]/[Y01]</short-date>
+                <within-day>Klo [H].[m01]</within-day>
+                <day-this-year>[D]. [MNn]ta</day-this-year>
+                <short-date>[D01].[M01].[Y01]</short-date>
             </formats>
         </common>
         <buttons>
             <home>&lt;i class="icon-home"/&gt; Koti</home>
-            <review>&lt;i class="icon-eye-open"/&gt; Käy läpi</review>
+            <review>&lt;i class="icon-eye-open"/&gt; Esikatsele</review>
             <pdf>&lt;i class="icon-print"/&gt; Näytä PDF</pdf>
             <tiff>&lt;i class="icon-picture"/&gt; TIFF</tiff>
             <delete>&lt;i class="icon-remove-sign"/&gt; Poista</delete>
@@ -2229,7 +2229,7 @@
             <edit>&lt;i class="icon-arrow-left"/&gt; Muokkaa</edit>
             <send>&lt;i class="icon-arrow-right"/&gt; Lähetä</send>
             <email>&lt;i class="icon-envelope"/&gt; Sähköposti</email>
-            <validate>&lt;i class="icon-ok"/&gt; Tarkista oikeellisuus</validate>
+            <validate>&lt;i class="icon-ok"/&gt; Tarkista</validate>
 
             <!-- Legacy buttons -->
             <submit>&lt;i class="icon-arrow-right"/&gt; Toimita</submit>
@@ -2248,7 +2248,7 @@
             <refresh>&lt;i class="icon-refresh" aria-label="Lataa sivu uudelleen"/&gt;</refresh>
             <wizard-next>&lt;i class="icon-chevron-right"/&gt; Seuraava</wizard-next>
             <wizard-prev>&lt;i class="icon-chevron-left"/&gt; Edellinen</wizard-prev>
-            <wizard-toc todo="true">&lt;i class="icon-list"/&gt; [Content]</wizard-toc>
+            <wizard-toc>&lt;i class="icon-list"/&gt; Sisältö</wizard-toc>
 
             <!-- Submit dialog -->
             <submit-dialog-clear>Tyhjennä ja sulje</submit-dialog-clear>
@@ -2264,10 +2264,10 @@
             <publish>&lt;i class="icon-globe"/&gt; Julkaise</publish>
             <save-publish>&lt;i class="icon-globe"/&gt; Julkaise</save-publish>
 
-            <yes todo="true">&lt;i class="icon-ok"/&gt; Yes</yes>
-            <no todo="true">&lt;i class="icon-remove"/&gt; No</no>
-            <ok todo="true">OK</ok>
-            <previous>Paluu</previous>
+            <yes>&lt;i class="icon-ok"/&gt; Kyllä</yes>
+            <no>&lt;i class="icon-remove"/&gt; Ei</no>
+            <ok>OK</ok>
+            <previous>Edellinen</previous>
             <next>Seuraava</next>
         </buttons>
         <components>
@@ -2275,18 +2275,18 @@
                 <open-section>Näytä lohko</open-section>
                 <close-section>Piilota lohko</close-section>
                 <section-name>Lohkon nimi</section-name>
-                <yes todo="true">[Yes]</yes>
-                <no todo="true">[No]</no>
-                <other todo="true">[Other]</other>
+                <yes>Kyllä</yes>
+                <no>Ei</no>
+                <other>Muu</other>
             </labels>
             <grid>
-                <insert-above>Liitä ylle</insert-above>
-                <insert-below>Liitä alle</insert-below>
+                <insert-above>Lisää ylle</insert-above>
+                <insert-below>Lisää alle</insert-below>
                 <move-up>Siirrä ylös</move-up>
                 <move-down>Siirrä alas</move-down>
                 <remove>Poista</remove>
-                <menu todo="true">Menu</menu>
-                <add-another todo="true">[Add Another]</add-another>
+                <menu>Valikko</menu>
+                <add-another>Lisää seuraava</add-another>
             </grid>
             <date-time>
                 <year>Vuosi</year>
@@ -2294,11 +2294,11 @@
                 <day>Päivä</day>
             </date-time>
             <wizard>
-                <errors todo="true">[Errors]</errors>
-                <incomplete todo="true">[Incomplete]</incomplete>
-                <complete todo="true">[Complete]</complete>
-                <not-started todo="true">[Not Started]</not-started>
-                <edit todo="true">[Edit]</edit>
+                <errors>Virheet</errors>
+                <incomplete>Keskeneräinen</incomplete>
+                <complete>Täytetty</complete>
+                <not-started>Ei aloitettu</not-started>
+                <edit>Muokkaa</edit>
             </wizard>
         </components>
         <untitled-form>Nimetön lomake</untitled-form>
@@ -2316,15 +2316,15 @@
             <canvas-not-supported>Voidakseni tehdä kuvakommentointia tulee selaimen tukea HTML5:n canvas-elementtiä</canvas-not-supported>
         </errors>
         <email>
-            <subject>Orbeon-lomakkeiden vahvistus</subject>
-            <body>Ole hyvä ja katso PDF- ja XML-formaatissa olevaa lomaketta.</body>
+            <subject>Orbeon Forms vahvistus</subject>
+            <body>Liitteenä lähettämänne lomake PDF- ja XML-formaateissa.</body>
         </email>
         <!-- Formats used for PDF template -->
         <print>
             <formats>
-                <date>[MNn] [D], [Y]</date>
-                <time>[H01]:[m01]:[s01]</time>
-                <dateTime>[MNn] [D], [Y] [H01]:[m01]:[s01]</dateTime>
+                <date>[D]. [MNn]ta [Y]</date>
+                <time>[H01].[m01].[s01]</time>
+                <dateTime>[D]. [MNn]ta [Y] klo [H01].[m01].[s01]</dateTime>
             </formats>
         </print>
         <summary>
@@ -2361,19 +2361,19 @@
                 <language-choice>Valitse kieli</language-choice>
                 <form-choice>Valitse taulukko</form-choice>
                 <free-search>Vapaa haku</free-search>
-                <any>[mikä tahansa]</any>
+                <any>Mikä tahansa</any>
                 <script>Täysi versio</script>
                 <noscript>Helppokäyttöinen versio</noscript>
                 <refresh>Lataa sivu uudelleen</refresh>
-                <close-box>[sulje]</close-box>
+                <close-box>Sulje</close-box>
                 <help-back>Paluu</help-back>
                 <goto-content>Siirry sisältöön</goto-content>
             </labels>
             <formats>
-                <date>[MNn] [D], [Y]</date>
-                <time>[H01]:[m01]:[s01]</time>
-                <dateTime>[MNn] [D], [Y] [H01]:[m01]:[s01]</dateTime>
-                <save-datetime>[MNn] [D], [Y] [H01]:[m01]:[s01]</save-datetime>
+                <date>[D]. [MNn]ta [Y]</date>
+                <time>[H01].[m01].[s01]</time>
+                <dateTime>[D]. [MNn]ta [Y] klo [H01].[m01].[s01]</dateTime>
+                <save-datetime>[D]. [MNn]ta [Y] klo [H01].[m01].[s01]</save-datetime>
             </formats>
         </summary>
         <detail>
@@ -2403,7 +2403,7 @@
                 <upload-done>Tiedoston lähetys valmis</upload-done>
                 <upload-error>Tiedoston lähetyksen aikana tapahtui virhe. Yritä uudelleen.</upload-error>
                 <upload-error-size>Lähetettävä tiedosto on liian suuri. Suurin sallittu tiedostokoko on {0,number,integer} tavua ja todellinen vastaanotettu koko on {1,number,integer} tavua.</upload-error-size>
-                <upload-error-mediatype  todo="true">[The file uploaded is of an incorrect type.]</upload-error-mediatype>
+                <upload-error-mediatype>Virheellinen tiedostotyyppi.</upload-error-mediatype>
             </messages>
             <draft-singleton>
                 <found-draft>Löydetty luonnos</found-draft>
@@ -2415,14 +2415,14 @@
                 <open-draft>Avaa automaattisesti tallennettu luonnos</open-draft>
                 <view-drafts>Näytä automaattisesti tallennetut luonnokset</view-drafts>
                 <start-new>Aloita tyhjästä</start-new>
-                <multiple-docs-title todo="true">[Existing form data found]</multiple-docs-title>
-                <multiple-docs-explanation todo="true">[You cannot create new data for this form definition, however you might be able to edit existing form data.]</multiple-docs-explanation>
-                <multiple-docs-view-data todo="true">[View existing form data]</multiple-docs-view-data>
+                <multiple-docs-title>Olemassa oleva lomaketieto löydetty</multiple-docs-title>
+                <multiple-docs-explanation>Et voi täyttää uutta lomaketta, mutta voit mahdollisesti muokata jo luotua lomaketta.</multiple-docs-explanation>
+                <multiple-docs-view-data>Katso olemassa olevat lomakkeet</multiple-docs-view-data>
             </draft-singleton>
             <labels>
                 <language-choice>Kieli</language-choice>
                 <errors>Virheiden tiivistelmä</errors>
-                <check-errors-in-form>Tämä lomake pitää sisällään virheitä</check-errors-in-form>
+                <check-errors-in-form>Tämä lomake sisältää virheitä</check-errors-in-form>
                 <error-details>Näytä virhetiedot</error-details>
                 <confirm>Vahvista</confirm>
                 <alert>Puuttuva tai virheellinen arvo</alert>
@@ -2465,8 +2465,8 @@
                 <connect>Yhdistä</connect>
                 <select>Valitse</select>
                 <operation>Toiminto</operation>
-                <reindex todo="true">[Reindex database(s)]</reindex>
-                <stop-reindex todo="true">[Stop reindexing]</stop-reindex>
+                <reindex>Indeksoi tietokanta/tietokannat uudelleen</reindex>
+                <stop-reindex>Lopeta uudelleenindeksointi</stop-reindex>
                 <all>Kaikki</all>
                 <none>Ei mitään</none>
                 <unpublished-local>Julkaisemattomat paikalliset lomakkeet</unpublished-local>
@@ -2499,25 +2499,25 @@
                 <remote>Etä</remote>
                 <form-identification>Lomakkeen tunnistetiedot</form-identification>
                 <last-modified>Muokattu</last-modified>
-                <reindexing-confirmation todo="true">[Confirm Reindexing]</reindexing-confirmation>
+                <reindexing-confirmation>Vahvista uudelleenindeksointi</reindexing-confirmation>
             </titles>
             <messages>
                 <no-forms>Sinulla ei ole pääsyä yhteenkään lomakkeeseen.</no-forms>
                 <publish-confirmation>Haluatko varmasti{0,choice,0#julkaista|1#merkata vanhaksi|2#upgrade} {1,choice,1#yhden lomakkeen|1&lt;{1,number,integer} lomaketta}?</publish-confirmation>
-                <reindexing-confirmation todo="true">[While reindexing, some features, like Form Runner summary pages, won't work as expected. As such, we recommend you perform reindexing while the system is offline. Are you sure you want to proceed with reindexing?]</reindexing-confirmation>
+                <reindexing-confirmation>Uudelleenindeksoidessa osa ominaisuuksista, kuten Form Runnerin yhteenvetosivu, eivät toimi odotetulla tavalla. Suosittelemme tekemään uudelleenindeksoinnin järjestelmän ollessa offline-tilassa. Haluatko varmasti indeksoida uudelleen?</reindexing-confirmation>
             </messages>
             <labels>
                 <available>Saatavilla</available>
                 <unavailable>Ei saatavilla</unavailable>
                 <library>Kirjasto</library>
                 <newer>Uudempi</newer>
-                <remote-server todo="true">[Remote server]</remote-server>
+                <remote-server>Etäpalvelin</remote-server>
                 <username>Käyttäjänimi</username>
                 <password>Salasana</password>
-                <reindexing-generic todo="true">[Reindexing &lt;span&gt;.&lt;/span&gt;&lt;span&gt;.&lt;/span&gt;&lt;span&gt;.&lt;/span&gt;]</reindexing-generic>
-                <reindexing-provider todo="true">[Reindexing {0} ({1,number}/{2,number})]</reindexing-provider>
-                <reindexing-stopping todo="true">[Reindex operation is stopping &lt;span&gt;.&lt;/span&gt;&lt;span&gt;.&lt;/span&gt;&lt;span&gt;.&lt;/span&gt;]</reindexing-stopping>
-                <reindexing-finished todo="true">[The reindexing operation is finished]</reindexing-finished>
+                <reindexing-generic>Indeksoidaan uudelleen &lt;span&gt;.&lt;/span&gt;&lt;span&gt;.&lt;/span&gt;&lt;span&gt;.&lt;/span&gt;</reindexing-generic>
+                <reindexing-provider>Indeksoidaan uudelleen {0} ({1,number}/{2,number})</reindexing-provider>
+                <reindexing-stopping>Uudelleenindeksointia lopetetaan &lt;span&gt;.&lt;/span&gt;&lt;span&gt;.&lt;/span&gt;&lt;span&gt;.&lt;/span&gt;</reindexing-stopping>
+                <reindexing-finished>Uudelleenindeksointi on valmis</reindexing-finished>
             </labels>
         </home>
     </resource>

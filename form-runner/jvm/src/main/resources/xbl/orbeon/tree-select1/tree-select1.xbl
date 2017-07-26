@@ -35,7 +35,7 @@
         <metadata xmlns="http://orbeon.org/oxf/xml/form-builder" xmlns:xf="http://www.w3.org/2002/xforms">
             <display-name lang="en">Tree Selector</display-name>
             <display-name lang="es" todo="true">[Tree Selector]</display-name>
-            <display-name lang="fi" todo="true">[Tree Selector]</display-name>
+            <display-name lang="fi">Puurakenne</display-name>
             <display-name lang="fr">Arbre de sélection</display-name>
             <display-name lang="ru" todo="true">[Tree Selector]</display-name>
             <display-name lang="de" todo="true">[Tree Selector]</display-name>
